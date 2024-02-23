@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitHubRepros.OrientationRepro"
+             Title="OrientationRepro">
+
+    <StackLayout HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"
+                 Orientation="{Binding StackLayoutOrientation}"
+                 BackgroundColor="DarkBlue">
+
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     WidthRequest="200"
+                     HeightRequest="200"
+                     Spacing="20"
+                     BackgroundColor="DarkGreen">
+
+            <Label FontAttributes="Bold"
+                   TextColor="White"
+                   FontSize="Header"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="{Binding DisplayOrientation}" />
+
+            <Label FontAttributes="Bold"
+                   TextColor="White"
+                   FontSize="Header"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="{Binding StackLayoutOrientation}" />
+
+        </StackLayout>
+
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     WidthRequest="200"
+                     HeightRequest="200"
+                     BackgroundColor="DarkRed">
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
