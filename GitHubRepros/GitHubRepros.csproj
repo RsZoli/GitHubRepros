@@ -80,6 +80,9 @@
   </ItemGroup>
 
   <ItemGroup>
+	<MauiXaml Update="GridBugRepro.xaml">
+	  <Generator>MSBuild:Compile</Generator>
+	</MauiXaml>
 	<MauiXaml Update="OrientationRepro.xaml">
 	  <Generator>MSBuild:Compile</Generator>
 	</MauiXaml>

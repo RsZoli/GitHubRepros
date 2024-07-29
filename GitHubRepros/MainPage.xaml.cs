@@ -42,9 +42,9 @@ namespace GitHubRepros
             await Shell.Current.GoToAsync("statusbarbehavior_repro2");
         }
 
-        private void OnSwitchStatusBarStyleClicked(object sender, EventArgs e)
+        private async void OnGridBugReproReproClicked(object sender, EventArgs e)
         {
-            StatusBarStyleProperty = StatusBarStyleProperty.Equals(StatusBarStyle.LightContent) ? StatusBarStyle.DarkContent : StatusBarStyle.LightContent;
+            await Shell.Current.GoToAsync("gridbug_repro");
         }
     }
 }

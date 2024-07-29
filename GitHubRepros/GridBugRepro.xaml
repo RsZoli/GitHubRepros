@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitHubRepros.GridBugRepro"
+             Title="GridBugRepro">
+
+        <VerticalStackLayout Margin="20, 0"
+                             Padding="0, 20, 0, 20"
+                             Spacing="20"
+                             VerticalOptions="Start"
+                             BackgroundColor="LightBlue">
+
+            <Grid HorizontalOptions="Center">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Too long long long long long text of Label 1"
+                       FontSize="Large"
+                       BackgroundColor="Goldenrod"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="0" />
+
+                <Label Text="-"
+                       FontSize="Large"
+                       BackgroundColor="LightGreen"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="1" />
+
+                <Label Text="Too long long long long long text of Label 2"
+                       FontSize="Large"
+                       BackgroundColor="HotPink"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="2" />
+
+            </Grid>
+
+            <Grid HorizontalOptions="Center">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Too long long long long long  text of Label 1"
+                       FontSize="Large"
+                       BackgroundColor="Goldenrod"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="0" />
+
+                <Label Text="-"
+                       FontSize="Large"
+                       BackgroundColor="LightGreen"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="1" />
+
+                <Label Text="Too long long long long long text of Label 2"
+                       FontSize="Large"
+                       BackgroundColor="HotPink"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="2" />
+
+            </Grid>
+
+            <Grid HorizontalOptions="Center">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Too long long long long long text of Label 1"
+                       FontSize="Large"
+                       BackgroundColor="Goldenrod"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="0" />
+
+                <Label Text="-"
+                       FontSize="Large"
+                       BackgroundColor="LightGreen"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="1" />
+
+                <Label Text="Short 2"
+                       FontSize="Large"
+                       BackgroundColor="HotPink"
+                       LineBreakMode="MiddleTruncation"
+                       Grid.Column="2" />
+
+            </Grid>
+
+        </VerticalStackLayout>        
+
+</ContentPage>
