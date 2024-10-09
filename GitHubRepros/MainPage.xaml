@@ -13,27 +13,30 @@
                    HeightRequest="100"
                    Aspect="AspectFit" />
 
-            <Label Text="Hello, World!"
+            <Label Text="GitHub repros"
                    Style="{StaticResource Headline}" />
 
-            <Label Text="Welcome to &#10;.NET Multi-platform App UI"
-                   Margin="0, 0, 0, 10"
-                   Style="{StaticResource SubHeadline}"
-                   SemanticProperties.HeadingLevel="Level2" />
+            <Label Text="dotnet/maui" />
 
-            <Button Text="Grid bug repro"
+            <Button Text="(#25144) iOS margin bug repro"
+                    Clicked="OnIosMarginBugRepro"
+                    HorizontalOptions="Fill" />
+
+            <Button Text="(#23735) Grid bug repro"
                     Clicked="OnGridBugReproReproClicked"
                     HorizontalOptions="Fill" />
-            
-            <Button Text="Orientation repro"
+
+            <Button Text="(#20545) Orientation repro"
                     Clicked="OnOrientationReproClicked"
                     HorizontalOptions="Fill" />
 
-            <Button Text="StatusbarBehavior repro 1"
+            <Label Text="CommunityToolkit/Maui" />
+
+            <Button Text="(#1707) StatusbarBehavior repro 1"
                     Clicked="OnStatusbarBehaviorRepro1Clicked"
                     HorizontalOptions="Fill" />
 
-            <Button Text="StatusbarBehavior repro 2"
+            <Button Text="(#1707) StatusbarBehavior repro 2"
                     Clicked="OnStatusbarBehaviorRepro2Clicked"
                     HorizontalOptions="Fill" />
 
