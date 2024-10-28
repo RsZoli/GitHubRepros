@@ -31,5 +31,10 @@
         {
             await Shell.Current.GoToAsync("iosmarginbug_repro");
         }
+
+        private async void OnStatusbarBehaviorRepro3Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("statusbarbehavior_repro3");
+        }
     }
 }

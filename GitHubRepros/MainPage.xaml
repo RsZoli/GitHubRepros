@@ -40,6 +40,10 @@
                     Clicked="OnStatusbarBehaviorRepro2Clicked"
                     HorizontalOptions="Fill" />
 
+            <Button Text="(#2306) StatusbarBehavior repro 3"
+                    Clicked="OnStatusbarBehaviorRepro3Clicked"
+                    HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
         
     </ScrollView>

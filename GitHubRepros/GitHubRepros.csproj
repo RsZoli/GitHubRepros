@@ -68,33 +68,9 @@
 
   <ItemGroup>
 	<PackageReference Include="CommunityToolkit.Maui" Version="9.1.0" />
-	<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.91" />
-	<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.91" />
+	<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.92" />
+	<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.92" />
 	<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="StatusbarBehaviorRepro2.xaml.cs">
-      <DependentUpon>StatusbarBehaviorRepro2.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-	<MauiXaml Update="GridBugRepro.xaml">
-	  <Generator>MSBuild:Compile</Generator>
-	</MauiXaml>
-	<MauiXaml Update="IosMarginBugRepro.xaml">
-	  <Generator>MSBuild:Compile</Generator>
-	</MauiXaml>
-	<MauiXaml Update="OrientationRepro.xaml">
-	  <Generator>MSBuild:Compile</Generator>
-	</MauiXaml>
-	<MauiXaml Update="StatusbarBehaviorRepro2.xaml">
-	  <Generator>MSBuild:Compile</Generator>
-	</MauiXaml>
-	<MauiXaml Update="StatusbarBehaviorRepro1.xaml">
-	  <Generator>MSBuild:Compile</Generator>
-	</MauiXaml>
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitHubRepros.StatusBarBehaviorRepro3"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="StatusBarBehaviorRepro3">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{AppThemeBinding Light=DarkRed, Dark=PaleVioletRed}" />
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout Spacing="30">
+
+        <Label Text="The statusbar color should be this in light mode!"
+               TextColor="DarkRed"
+               FontSize="Large"
+               FontAttributes="Bold"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+
+        <Label Text="The statusbar color should be like this in dark mode!"
+               TextColor="PaleVioletRed"
+               FontSize="Large"
+               FontAttributes="Bold"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

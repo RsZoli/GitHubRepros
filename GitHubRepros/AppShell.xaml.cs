@@ -9,6 +9,7 @@
             Routing.RegisterRoute("iosmarginbug_repro", typeof(IosMarginBugRepro));
             Routing.RegisterRoute("statusbarbehavior_repro1", typeof(StatusbarBehaviorRepro1));
             Routing.RegisterRoute("statusbarbehavior_repro2", typeof(StatusbarBehaviorRepro2));
+            Routing.RegisterRoute("statusbarbehavior_repro3", typeof(StatusBarBehaviorRepro3));
 
             InitializeComponent();
         }
