@@ -1,9 +1,10 @@
-namespace GitHubRepros;
-
-public partial class StatusbarBehaviorRepro2 : ContentPage
+namespace GitHubRepros
 {
-	public StatusbarBehaviorRepro2()
-	{
-		InitializeComponent();
-	}
+    public partial class StatusbarBehaviorRepro2 : ContentPage
+    {
+        public StatusbarBehaviorRepro2()
+        {
+            InitializeComponent();
+        }
+    }
 }

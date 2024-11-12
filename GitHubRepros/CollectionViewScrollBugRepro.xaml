@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitHubRepros.CollectionViewScrollBugRepro"
+             Title="CollectionViewScrollBugRepro">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <HorizontalStackLayout Grid.Row="0"
+                               HorizontalOptions="Center"
+                               Spacing="20">
+
+            <Label Text="Scroll to index"
+                   VerticalOptions="Center"/>
+
+            <Entry Text="{Binding ScrollToIndex}"
+                   VerticalOptions="Center"/>
+
+            <Button Text="Scroll"
+                    VerticalOptions="Center"
+                    Clicked="Button_Clicked" />
+
+        </HorizontalStackLayout>
+
+        <CollectionView Grid.Row="1"
+                        x:Name="CollectionView_BugReport"
+                        ItemsSource="{Binding CvItems}">
+
+            <CollectionView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <Label Text="{Binding}"
+                           Margin="0, 10"
+                           HorizontalOptions="Center"
+                           FontSize="Large" />
+
+                </DataTemplate>
+                
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>
+        
+    </Grid>
+
+</ContentPage>

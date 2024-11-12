@@ -36,5 +36,15 @@
         {
             await Shell.Current.GoToAsync("statusbarbehavior_repro3");
         }
+
+        private async void OnCollectionViewScrollBugRepro(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("collectionviewscrollbug_repro");
+        }
+
+        private async void OnEntryFocusBugReproClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("entryfocusbugrepro");
+        }
     }
 }

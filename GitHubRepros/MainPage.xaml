@@ -18,6 +18,11 @@
 
             <Label Text="dotnet/maui" />
 
+            <Button Text="(#) CollectionView scroll bug repro"
+                    Clicked="OnCollectionViewScrollBugRepro"
+                    HorizontalOptions="Fill"
+                    IsVisible="False" />
+
             <Button Text="(#25144) iOS margin bug repro"
                     Clicked="OnIosMarginBugRepro"
                     HorizontalOptions="Fill" />
@@ -28,6 +33,11 @@
 
             <Button Text="(#20545) Orientation repro"
                     Clicked="OnOrientationReproClicked"
+                    HorizontalOptions="Fill" />
+
+
+            <Button Text="(#25793) Entry focus bug repro"
+                    Clicked="OnEntryFocusBugReproClicked"
                     HorizontalOptions="Fill" />
 
             <Label Text="CommunityToolkit/Maui" />
